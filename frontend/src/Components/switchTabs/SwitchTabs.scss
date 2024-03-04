@@ -1,0 +1,57 @@
+.switchingTabs {
+    height: 34px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 2px;
+     .tabItems {
+        display: flex;
+        align-items: center;
+        height: 30px;
+        position: relative;
+        .tabItem {
+            @media only screen and (max-width:413px) 
+            {
+                 width: 80px;  
+            }
+            @media only screen and (max-width:299px) 
+            {
+                 width: 60px;  
+            }
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            color: var(--black);
+            font-size: 14px;
+            position: relative;
+             z-index: 1;
+            cursor: pointer;
+            &.active {
+                color: white;
+            }
+           
+        }
+        .movingBg {
+            @media only screen and (max-width:413px) 
+            {
+                 width: 80px;  
+            }
+            @media only screen and (max-width:299px) 
+            {
+                 width: 60px;  
+            }
+            height: 30px;
+            width: 100px;
+            border-radius: 15px;
+            background-image: var(--gradient);
+            position:absolute;
+            left: 0px;
+            transition: left  0.4s;
+        }
+        // @media only screen and (max-width:413px) 
+        // {
+        //      width: 80px;  
+        // }
+    }
+ }
