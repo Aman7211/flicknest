@@ -14,7 +14,7 @@ app.use(express.json());
 
 app.use(
     cors({
-      origin: JSON.parse("*")
+      origin: JSON.parse("http://localhost:3000")
     })
   );
   
