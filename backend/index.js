@@ -14,7 +14,7 @@ app.use(express.json());
 
 app.use(
     cors({
-      origin: JSON.parse(process.env.CORS_ORIGIN)
+      origin: JSON.parse("*")
     })
   );
   
